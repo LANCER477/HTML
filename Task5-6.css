@@ -1,0 +1,27 @@
+.container {
+    width: 600px; 
+    background-color: rgb(214, 214, 214); 
+    border: 1px solid gray;
+    font-size: 20px; 
+}
+
+.container p {
+    margin: 0;
+    padding: 15px; 
+    border-bottom: 1px solid gray;
+}
+
+.container2 {
+    background-color: rgb(214, 214, 214); 
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.container2 button{
+    border: 0;
+    background-color: grey;
+    padding: 15px;
+    color: white
+}
