@@ -1,0 +1,25 @@
+
+
+.todo-list {
+    width: 300px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.todo-list tr:nth-child(odd) {
+    background-color: #bbe2f6;
+}
+.todo-list tr:nth-child(even) {
+    background-color: #b9b6b6;
+}
+.todo-list td {
+    padding: 10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.delete {
+    color: red;
+    cursor: pointer;
+}
