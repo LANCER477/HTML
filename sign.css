@@ -1,51 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+  background-color: #f5f5f5;
+}
+
 .form {
-    background-color: #fff;
-    display: block;
-    padding: 1rem;
-    max-width: 350px;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    
-  }
-
-  body
-  {
-    display: flex;
-    justify-content: center;
-    padding: 10%;
-  }
-
-  .form-title {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    color: #000;
-  }
-
-  .inputC input {
-  position: relative;
-  outline: none;
-  border: 1px solid #9e9fa1;
-  margin: 8px 0;
   background-color: #fff;
-  padding: 2.5ex;
-  width: 300px;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5%;
   border-radius: 0.5rem;
-  
-  }
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-  .sign {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #119921;
-    color: #ffffff;
-    width: 100%;
-    border-radius: 10px;
-    font-size: larger;
-  }
-  
-  
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
+.inputC {
+  display: grid;
+  gap: 0.8rem;
+}
 
-  
+.inputC input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.sign {
+  display: grid;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #119921;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
