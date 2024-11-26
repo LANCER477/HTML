@@ -69,54 +69,111 @@ nav a {
   
   .block {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    height: 87.8vh;
-    padding-right: 50%;
+    height: 88.8vh;
+    padding-left: 8%;
+    margin-top: 15%;
     
   }
 
  
 
   .block h1 {
-    font-size: 3rem;
+    font-size: 7em;
     margin-bottom: 20px;
     color: #f49042;
+    text-align: left;
   }
   
   .block p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    
+    text-align: left;
   }
   
   .buttons {
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .button {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 2px solid #f49042;
     color: #f49042;
     font-weight: bold;
     transition: 0.3s;
     border-radius: 5px;
+    
+    
+  }
+
+  .view-categories {
+    background: transparent;
   }
   
-  
+  .start-voting {
+    background: #f49042;
+    color: #000;
+  }
+
   .footer {
     padding: 25px;
     background: #161f2b;
     position: relative;
-    text-align: center;
+    text-align: left;
   }
 
   .footer p {
     margin: 0;
     font-size: 14px;
     color: #bbb;
+    text-align: center;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .block {
+        align-items: center; 
+        padding-left: 5%; 
+        margin-top: 50px; 
+    }
+
+    .block h1 {
+        font-size: 3rem; 
+    }
+
+    .block p {
+        font-size: 1rem; 
+        text-align: center; 
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .button {
+        width: 80%; 
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .block h1 {
+        font-size: 2rem; 
+    }
+
+    .block p {
+        font-size: 0.9rem; 
+    }
+
+    .button {
+        width: 90%; 
+        padding: 10px 15px; 
+    }
+}
