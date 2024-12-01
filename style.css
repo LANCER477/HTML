@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #f4f5f8;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container select,
+.form-container textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container input:invalid {
+    border: 2px solid rgb(209, 80, 80);
+    background-color: #ffecec;
+}
+
+.form-container input:valid {
+    border: 2px solid green;
+    background-color: #ecffec;
+}
+
+
+
+
+.form-container .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container button {
+    background-color: #2eab26;
+    color: white;
+    padding: 20px 170px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-container button:hover {
+    background-color: #36c749;
+}

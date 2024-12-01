@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="post" novalidate>
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" minlength="5" required placeholder="Enter login">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your password">
+
+            <label for="confirm-password">Confirmed:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required placeholder="Repeat the password">
+
+            <label for="full-name">Surname-Name:</label>
+            <input type="text" id="full-name" name="full-name" minlength="6" required placeholder="Enter Surname-Name">
+
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+
+            <label>languages:</label>
+            <label><input type="checkbox" name="languages" value="english"> English</label>
+            <label><input type="checkbox" name="languages" value="german"> German</label>
+            <label><input type="checkbox" name="languages" value="french"> French</label>
+            <label><input type="checkbox" name="languages" value="spanish"> Spanish</label>
+            <label><input type="checkbox" name="languages" value="italian"> Italian</label>
+
+            <label for="field">Scope of work:</label>
+            <select id="field" name="field">
+                <option value="education">Education</option>
+                <option value="it">IT</option>
+                <option value="medicine">Medicine</option>
+                <option value="science">Science</option>
+            </select>
+
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter e-mail">
+
+            <label for="info">More info:</label>
+            <textarea id="info" name="info" rows="4" placeholder="Enter additional information"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Done</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
