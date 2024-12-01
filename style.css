@@ -1,0 +1,42 @@
+table {
+           
+            height: 300px;
+            width: 900px;
+            
+            border-radius: 20px;
+            overflow: hidden;
+            border-spacing: 0ex;
+            background-color: rgb(203, 209, 209);
+            
+        }
+        
+
+        th, td {
+            
+            margin: 5px;
+            padding : 10px;
+        }
+
+        .whiteRow
+        {
+            background-color: rgb(116, 116, 116);
+        }
+
+        .grayRow
+        {
+            background-color: gray;
+        }
+
+        .button
+        {
+
+            border-radius: 10px;
+            
+            background-color: rgb(216, 213, 213);
+
+        }
+
+        .up
+        {
+            width: 100ex;
+        }
