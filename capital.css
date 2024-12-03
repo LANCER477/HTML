@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.788);
     border-bottom: 1px solid #333;
     padding: 10px 5%;
     z-index: 1000;
@@ -52,8 +52,12 @@ body {
     color: #f49042;
 }
 
-.offcanvas-body {
-    background-color: #000000;
+.offcanvas.show .navbar-nav .nav-link {
+    color: #000; 
+}
+
+.offcanvas.show .navbar-nav .nav-link:hover {
+    color: #f49042; 
 }
 
 .hero {
