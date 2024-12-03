@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'IntroDemo', sans-serif;
     font-weight: bold;
-    background: linear-gradient(to bottom, #000, #222);
+    
     color: #fff;
    
     
@@ -41,7 +41,7 @@ body {
 }
 
 .navbar .nav-link {
-    color: #fff;
+    color: #fafafa;
     font-size: 1rem;
     margin: 0 15px;
     text-transform: uppercase;
@@ -50,6 +50,10 @@ body {
 
 .navbar .nav-link:hover {
     color: #f49042;
+}
+
+.offcanvas-body {
+    background-color: #000000;
 }
 
 .hero {
@@ -106,6 +110,8 @@ body {
 
 .news {
    padding-top: 10px;
+   background-color: #000000fb;
+   
    
     
 }
