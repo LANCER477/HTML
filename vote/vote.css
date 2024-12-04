@@ -1,4 +1,4 @@
-/* style.css */
+
 body {
     margin: 0;
     font-family: 'IntroDemo', sans-serif;
@@ -169,15 +169,15 @@ border: 3px solid #8619ca68;
 
 
 .nominee-block.selected button {
-    background-color: #4caf50; /* Зеленый цвет кнопки */
+    background-color: #4caf50; 
     color: white;
     border: none;
     cursor: default;
-    pointer-events: none; /* Запретить повторное нажатие */
+    pointer-events: none; 
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Кнопка при выборе */
+
 .nominee-block.selected button::after {
     content: "Выбран!";
     display: block;
