@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaf7ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #34d02c;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header button {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #0d6efd;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #0bd715;
+    color: white;
+}
+
+header button:active {
+    transform: scale(0.95);
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 140px 20px 20px 20px; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+}
+
+.card {
+    flex-shrink: 0;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dde4eb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1ad63c;
+}
+
+.text-body {
+    font-size: 1em;
+    color: #555;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-container {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-container h3 {
+    font-size: 1.2em;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.task {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #212529;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.task:hover {
+    background-color: #e9ecef;
+}
