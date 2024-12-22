@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(120deg, #4c4c4c, #313131);
+    color: #070707;
+}
+
+.main {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0px 15% 0px 15%;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(106, 106, 106, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main p {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.leftBar {
+    width: 70px;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+    margin-top: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leftBar:hover {
+    width: 200px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.menu-item svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-right: 20px;
+    fill: #fff;
+}
+
+.menu-item span {
+    white-space: nowrap;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+}
+
+.leftBar:hover .menu-item span {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.leftBar:hover .menu-item svg {
+    fill: #fffa;
+}
+
+.menu-item:last-child {
+    margin-top: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+

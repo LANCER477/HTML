@@ -1,0 +1,100 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Фон для улучшения внешнего вида */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: inline-block;
+    width: 23%; /* Увеличена ширина карточек */
+    height: 500px; /* Увеличена высота карточек */
+    margin: 20px;
+    border-top: 2px solid #b3b3b37a;
+    border-left: 2px solid #c5c5c575;
+    box-shadow: 5px 5px 15px #00000025;
+    background: #FFFFFF50;
+    border-radius: 20px; /* Более скругленные углы */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    background: #ffffff90; /* Осветление карточки при наведении */
+}
+
+p {
+    margin-top: 0px;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.enterprise {
+    border-bottom: 7px solid #e74c3c;
+}
+
+.professional {
+    border-bottom: 7px solid #f39c12;
+}
+
+.standard {
+    border-bottom: 7px solid #3498db;
+}
+
+.basic {
+    border-bottom: 7px solid #2ecc71;
+}
+
+.price {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.amount {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.period {
+    color: #555;
+    font-size: 0.8em;
+}
+
+.features {
+    text-align: center;
+    margin: 25px 10px;
+    line-height: 2;
+    font-size: 1em;
+    color: #444;
+}
+
+.features div {
+    padding: 5px 0;
+}
+
+.buyButton {
+    display: inline-block;
+    background-color: #4caf50;
+    width: 60%; /* Увеличена ширина кнопки */
+    padding: 15px 25px;
+    font-size: 18px; /* Увеличен размер шрифта */
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Закругленная кнопка */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
